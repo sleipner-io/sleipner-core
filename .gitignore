@@ -1,0 +1,199 @@
+## "Main" - C++ related and ide/other tool - related
+# Allow "private" directories to not be tracked
+priv*
+
+# Ignore any files/directories starting with . (with a few exceptions)
+.*
+.*/
+!.git*
+
+# Prerequisites
+*.d
+
+# Build install directories
+bin/
+lib/
+lib64/
+
+# Compiled Executables
+*.exe
+*.out
+*.app
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Precompiled headers
+*.gch
+*.pch
+
+## Additional stuff
+# IDE specific files/directories
+.vscode/
+.idea/
+
+# Doxygen Documentation
+docs/html/
+docs/latex/
+docs/doxygen_xml/
+
+# Sphinx Documentation
+docs/_build/
+docs/build/
+docs/
+
+# Linux specific
+*.swp
+*.swo
+*~
+
+# Mac specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows specific
+*.pdb
+ehthumbs.db
+Thumbs.db
+
+# Visual Studio related
+*.vcxproj
+*.vcxproj.filters
+*.vxcproj.user
+*.sln
+.vs/
+
+# Google Test
+googletest/
+
+## Because it is being built using CMake (see github/gitignore/CMake.gitignore)
+# CMake build directories, and related files
+build/
+cmake-build-*/
+CMakeLists.txt.user
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+CMakeUserPresets.json
+install/
+
+## With the goal of eventually wrapping this in Python code (see github/gitignore/Python.gitignore)
+# Byte-complied / optimized / related
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# PEP 582
+__pypackages__/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Rope
+.ropeproject
+
+# mkdocs
+/site
+
+# mypy - PEP 484
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
